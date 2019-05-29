@@ -1,0 +1,77 @@
+@import "reset.css";
+@import "header_footer";
+body{
+  background: url("../images/background.jpg") repeat;
+  background-size: 300px 300px;
+  min-width: 300px;
+  max-width: 3000px;
+}
+
+.main h1,h2 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.main h1 {
+  font-size: 50px;
+  color: @deepviolet;
+}
+.main h2 {
+  font-size: 30px;
+  color: @deepviolet;
+}
+
+.main__content{
+  margin: 10px auto;
+  width: 70%;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: double 5px red;
+  padding: 10px;
+}
+
+legend {
+  margin: 10px;
+}
+button {
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+}
+
+input {
+  width: 100%;
+}
+textarea {
+  width: 100%;
+}
+iframe {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  margin: 20px auto;
+}
+// карта---------------------------------------------
+
+@media all and (max-width: 550px ) {
+ .main__content h1 {
+   font-size: 30px;
+ }
+ .main__content h2 {
+   font-size: 15px;
+ }
+
+ iframe {
+   height: 300px;
+ }
+}

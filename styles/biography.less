@@ -1,0 +1,99 @@
+@import "reset.css";
+@import "header_footer";
+
+body {
+  min-width: 300px;
+  max-width: 3000px;
+}
+
+.main {
+  background: url("../images/background.jpg") repeat;
+  background-size: 300px 300px;
+}
+
+.main h1 {
+  display: inline-block;
+  width: 100%;
+  margin: 20px auto;
+  color: @deepviolet;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Pacifico', cursive;
+}
+
+.toggle_container {
+  display: none;
+}
+
+//скрытый блок --------------------------------------------
+
+.trigger {
+  display: block;
+  position: relative;
+  width: 500px;
+}
+.trigger a {
+  display: block;
+  position: relative;
+  opacity: 0.9;
+}
+
+.trigger a:hover {
+  opacity: 1;
+   .trigger__name {
+     color: deepskyblue;
+   }
+}
+
+.trigger__name {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 30px;
+}
+
+// название открывающегося блока -----------------------
+
+.trigger img {
+  max-width: 100%;
+  max-height: 600px;
+}
+
+.main__biography {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main__biography h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.block h3 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+.block p {
+  font-size: 25px;
+  text-indent: 30px;
+}
+
+@media all and (max-width: 550px ) {
+  .trigger__name {
+    font-size: 20px;
+  }
+
+  .block h3 {
+    font-size: 30px;
+  }
+
+  .block p {
+    font-size: 15px;
+  }
+}

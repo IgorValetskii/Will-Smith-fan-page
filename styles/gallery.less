@@ -1,0 +1,67 @@
+@import "reset.css";
+@import "header_footer";
+
+body {
+  min-width: 550px;
+  max-width: 3000px;
+}
+
+.main {
+  background: url("../images/background.jpg") repeat;
+  background-size: 300px 300px;
+}
+
+.main__gallery {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main__gallery img {
+  margin: 10px;
+  border: solid 3px deepskyblue;
+}
+
+.main h1 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  font-family: 'Pacifico', cursive;
+  color: @deepviolet;
+}
+
+a.photo:hover img {
+  border: solid 3px yellow;
+}
+
+@media all and (max-width: 1840px) {
+  //.photo {
+  //  display: block;
+  //  margin: 0 auto;
+  //}
+  .main__gallery img {
+    margin: 10px 50px;
+  }
+}
+
+@media all and (max-width: 1460px) {
+  //.photo {
+  //  display: block;
+  //  margin: 0 auto;
+  //}
+  .main__gallery img {
+    margin: 10px;
+  }
+}
+
+@media all and (max-width: 1222px) {
+  .photo img {
+    display: block;
+    margin: 0 auto;
+  }
+  .main__gallery img {
+    margin: 10px;
+  }
+}
+

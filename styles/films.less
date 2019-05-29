@@ -1,0 +1,106 @@
+@import "reset.css";
+@import "header_footer";
+
+body {
+  background: url("../images/background.jpg") repeat;
+  background-size: 300px 300px;
+  min-width: 300px;
+  max-width: 3000px;
+}
+
+.main__films {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main__films__info div {
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+.main__films__info div img {
+  display: block;
+  float: left;
+  width: 400px;
+  height: 600px;
+  padding: 30px 20px 20px;
+}
+
+.main h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.main__films__info div div {
+  clear: both;
+}
+// пустой блок-----------------------------------
+
+
+.main__films__info__film a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 15px 30px;
+  overflow: hidden;
+  border: 2px solid;
+  border-bottom-width: 4px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: deepskyblue;
+  background: rgba(255, 255, 255, 1);
+  transition: color .3s, background .5s;
+}
+//--------------------------------------------------Эффект кнопки
+.main__films__info__film a:hover {
+  animation: stripes .75s infinite linear;
+  background: linear-gradient(45deg, rgb(0, 191, 255) 25%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 50%, rgb(0, 191, 255) 50%, rgba(30, 255, 188, 1) 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1));
+  background-size: 10px 10px;
+  color: #0d008a;
+}
+
+.main__films__info__film p {
+  text-indent: 30px;
+}
+
+@keyframes stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 0;
+  }
+}
+
+@media all and (max-width: 550px){
+  .main__films__info div img {
+    width: 200px;
+    height: 300px;
+  }
+  .main__films__info h1 {
+    font-size: 20px;
+  }
+
+  .main__films__info p {
+    font-size: 15px;
+  }
+
+
+}
+
+@media all and (max-width: 900px) {
+  .main__films__info div img {
+
+    float: none;
+  }
+
+
+  .main__films__info div img {
+   margin: 0 auto;
+  }
+}

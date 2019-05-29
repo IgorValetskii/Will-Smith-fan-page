@@ -1,0 +1,75 @@
+@import "reset.css";
+@import "header_footer";
+
+body {
+  min-width: 300px;
+  max-width: 3000px;
+}
+
+.main {
+  background: url("../images/background.jpg") repeat;
+  background-size: 300px 300px;
+}
+
+.main__name {
+  position: absolute;
+  text-align: center;
+  color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main__name h1 {
+  font-size: 80px;
+  letter-spacing: 0.2em;
+}
+
+.main__name h3 {
+  font-size: 40px;
+}
+
+.main__slider {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  height: 1080px;
+  -moz-animation: sliding 12s infinite 3s;
+  -webkit-animation: sliding 12s infinite 3s;
+  -o-animation: sliding 12s infinite 3s;
+  animation: sliding 12s infinite 3s;
+  background: url("../images/slider/img-1.jpg") no-repeat center center / cover;
+}
+
+@keyframes sliding {
+  25% {
+    background: url("../images/slider/img-2.jpg") no-repeat center center / cover;
+  }
+
+  50% {
+    background: url("../images/slider/img-3.jpg") no-repeat center center / cover;
+  }
+
+  75% {
+    background: url("../images/slider/img-4.jpg") no-repeat center center / cover;
+  }
+}
+
+@media all and (max-width: 550px ) {
+  .main__name h1 {
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+
+  .main__name h3 {
+    font-size: 20px;
+  }
+
+}
+
+@media all and (max-width: 900px) {
+  .main__slider {
+    height: 500px;
+  }
+}
